@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Details | Property Consultant Real Estate Advisory</title>
+  <meta name="description" content="In-depth specifications, architectural features, amenities, and location analysis for featured real estate listings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <aside class="header-top" aria-label="Quick contact and demo notice">
+    <div class="container">
+      <div class="header-top-info">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +91 90000 00000 (Demo)</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> demo@example.com</span>
+      </div>
+      <div class="header-top-badge">
+        <span>Portfolio Demo • Frontend Showcase</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Property Consultant Home">
+          <span class="brand-title">PROPERTY CONSULTANT</span>
+          <span class="brand-subtitle">Real Estate Advisory</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="buy-property.html" class="nav-link">Buy Property</a></li>
+          <li><a href="sell-property.html" class="nav-link">Sell Property</a></li>
+          <li><a href="rent.html" class="nav-link">Rent & Lease</a></li>
+          <li><a href="investment.html" class="nav-link">Investment</a></li>
+          <li><a href="blog.html" class="nav-link">Property Guides</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn btn-primary btn-sm" data-open-modal="consultation">Book a Consultation</button>
+          <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <section class="section-bg-grey" style="padding: 1.25rem 0; border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="breadcrumbs" style="justify-content: flex-start; margin-bottom: 0;">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <a href="buy-property.html">Properties</a>
+          <span class="separator">/</span>
+          <span id="detailBreadcrumb">Premium Apartment – Demo Location 01</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Property Main Details Section -->
+    <section class="section" style="padding-top: 3rem;">
+      <div class="container">
+        <!-- Title and Price Header -->
+        <div class="property-detail-header reveal">
+          <div>
+            <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <span class="badge badge-gold" id="detailTypeBadge">BUY • FOR SALE</span>
+              <span class="badge badge-navy" id="detailCategoryBadge">RESIDENTIAL APARTMENT</span>
+              <span class="badge badge-demo">ILLUSTRATIVE DEMO DATA</span>
+            </div>
+            <h1 id="detailTitle" style="font-size: 2.3rem; margin-bottom: 0.4rem;">Premium Apartment – Demo Location 01</h1>
+            <div class="property-location" style="font-size: 0.95rem;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span id="detailLocation">Demo Location 01, North Sector, Demo City</span>
+            </div>
+          </div>
+
+          <div style="text-align: right;">
+            <div class="property-price" id="detailPrice" style="font-size: 2.2rem; margin-bottom: 0.25rem;">
+              ₹85,00,000
+            </div>
+            <span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Guide Asking Price • Illustrative Demo</span>
+          </div>
+        </div>
+
+        <!-- Image Gallery Placeholder Grid (Prepared for Google Flow Replacements) -->
+        <!-- Property Image Gallery Grid -->
+        <div class="property-gallery-grid reveal">
+          <!-- Main Hero Gallery Image -->
+          <div class="gallery-clickable" data-label="Primary Exterior & Living View" style="cursor: pointer; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); position: relative;">
+            <img id="detailMainImg" src="images/gallery-main-01.jpg" alt="Primary Property View" style="width: 100%; height: 420px; object-fit: cover; display: block;" loading="eager">
+            <span style="position: absolute; bottom: 1rem; right: 1rem; background: rgba(23,43,69,0.8); color: #fff; padding: 0.35rem 0.75rem; border-radius: 20px; font-size: 0.75rem; backdrop-filter: blur(4px);">Click to Expand View</span>
+          </div>
+
+          <!-- Secondary Thumbs -->
+          <div class="property-gallery-thumbs">
+            <div class="gallery-clickable" data-label="Master Bedroom & Balcony View" style="cursor: pointer; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
+              <img src="images/gallery-suite-01.jpg" alt="Master Suite View" style="width: 100%; height: 200px; object-fit: cover; display: block;" loading="lazy">
+            </div>
+
+            <div class="gallery-clickable" data-label="Kitchen & Dining Architecture" style="cursor: pointer; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
+              <img src="images/gallery-amenity-01.jpg" alt="Kitchen & Amenities" style="width: 100%; height: 200px; object-fit: cover; display: block;" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Specifications Strip -->
+        <div class="specs-strip reveal">
+          <div class="spec-box">
+            <div class="spec-box-label">Built-Up Area</div>
+            <div class="spec-box-val" id="detailSize">1,850 sq.ft</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-box-label">Configuration</div>
+            <div class="spec-box-val" id="detailConfig">3 BHK + 3 Baths</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-box-label">Floor Position</div>
+            <div class="spec-box-val">12th of 24 Floors</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-box-label">Parking</div>
+            <div class="spec-box-val" id="detailParking">1 Reserved Covered</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-box-label">Property Status</div>
+            <div class="spec-box-val" id="detailStatus">Ready to Move</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-box-label">Furnishing</div>
+            <div class="spec-box-val">Semi-Furnished</div>
+          </div>
+        </div>
+
+        <!-- 2-Column Content: Left Details, Right Sidebar Form -->
+        <div class="detail-layout">
+          <!-- Left Column -->
+          <div class="reveal">
+            <!-- Property Overview -->
+            <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">Property Overview</h2>
+            <p id="detailDesc" style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem;">
+              This spacious 3 BHK apartment is positioned within a prestigious gated community in Demo Location 01. Benefiting from corner positioning, the residence offers abundant natural cross-ventilation, unobstructed skyline balconies, and high-quality vitrified flooring throughout.
+            </p>
+
+            <!-- Key Specifications Table -->
+            <h3 style="font-size: 1.35rem; margin-bottom: 1rem;">Key Specifications</h3>
+            <div style="border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; margin-bottom: 2.5rem;">
+              <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem; text-align: left;">
+                <tbody>
+                  <tr style="border-bottom: 1px solid var(--border-color); background: #FAFBFD;">
+                    <td style="padding: 0.85rem 1.25rem; font-weight: 600; width: 35%;">Super Built-Up Area</td>
+                    <td style="padding: 0.85rem 1.25rem; color: var(--text-charcoal);">1,850 sq.ft (Carpet Ratio: 78%)</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid var(--border-color);">
+                    <td style="padding: 0.85rem 1.25rem; font-weight: 600;">Balconies & Sit-outs</td>
+                    <td style="padding: 0.85rem 1.25rem; color: var(--text-charcoal);">2 Wide Balconies + Separate Utility Utility Area</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid var(--border-color); background: #FAFBFD;">
+                    <td style="padding: 0.85rem 1.25rem; font-weight: 600;">Facing Direction</td>
+                    <td style="padding: 0.85rem 1.25rem; color: var(--text-charcoal);">North-East Entrance (Vaastu Compliant)</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid var(--border-color);">
+                    <td style="padding: 0.85rem 1.25rem; font-weight: 600;">Power Backup</td>
+                    <td style="padding: 0.85rem 1.25rem; color: var(--text-charcoal);">100% DG Backup for common areas & 3 kVA dedicated</td>
+                  </tr>
+                  <tr style="background: #FAFBFD;">
+                    <td style="padding: 0.85rem 1.25rem; font-weight: 600;">Water Supply</td>
+                    <td style="padding: 0.85rem 1.25rem; color: var(--text-charcoal);">Municipal Water Connection + On-site Rainwater Harvesting</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Amenities -->
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Society Amenities & Features</h3>
+            <div class="amenities-grid" style="margin-bottom: 2.5rem;">
+              <div class="amenity-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>State-of-the-Art Clubhouse</span>
+              </div>
+              <div class="amenity-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Swimming Pool & Kids Splash Deck</span>
+              </div>
+              <div class="amenity-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>24/7 CCTV & Multi-Tier Manned Security</span>
+              </div>
+              <div class="amenity-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Equipped Fitness Gym & Yoga Studio</span>
+              </div>
+              <div class="amenity-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>High-Speed Passenger & Service Elevators</span>
+              </div>
+              <div class="amenity-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Jogging Track & Landscaped Zen Park</span>
+              </div>
+            </div>
+
+            <!-- Location Intelligence -->
+            <h3 style="font-size: 1.35rem; margin-bottom: 1rem;">Location & Connectivity Insights</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">
+              Conveniently positioned along the main arterial corridor of Demo Location 01, providing quick transit access to major commercial offices, healthcare centers, and educational hubs:
+            </p>
+            <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 2rem; color: var(--text-charcoal); font-size: 0.92rem; line-height: 1.8;">
+              <li>Upcoming Metro Station: 1.2 km (Approx 5 mins drive)</li>
+              <li>Central Business District: 7.5 km (Approx 20 mins drive)</li>
+              <li>Premier Multi-Speciality Hospital: 2.4 km</li>
+              <li>Reputed International Schools: 3.0 km radius</li>
+              <li>International Airport: 32 km via signal-free arterial expressway</li>
+            </ul>
+
+            <!-- Demo Advisory Disclaimer Box -->
+            <div class="demo-disclaimer-box">
+              <strong>Property Advisory Note:</strong> The technical specs, distances, and pricing metrics displayed above represent generic illustrative demo data. Prior to any formal commitment, Property Consultant arranges physical inspections and title verification via certified legal professionals.
+            </div>
+          </div>
+
+          <!-- Right Column: Sticky Enquiry Form -->
+          <div class="sidebar-sticky reveal">
+            <div class="form-card">
+              <span class="badge badge-gold" style="margin-bottom: 0.6rem;">Dedicated Advisory</span>
+              <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Enquire About This Property</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                Schedule an accompanied site inspection or request a detailed verification dossier.
+              </p>
+
+              <form data-validate id="propertyDetailEnquiryForm">
+                <div class="form-field">
+                  <label for="detailClientName">Full Name <span class="required">*</span></label>
+                  <input type="text" id="detailClientName" name="fullName" class="form-control" placeholder="Your name" required>
+                  <span class="field-error-msg">Please enter your name.</span>
+                </div>
+
+                <div class="form-field">
+                  <label for="detailClientPhone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="detailClientPhone" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+                  <span class="field-error-msg">Please enter a valid phone number.</span>
+                </div>
+
+                <div class="form-field">
+                  <label for="detailClientEmail">Email Address <span class="required">*</span></label>
+                  <input type="email" id="detailClientEmail" name="email" class="form-control" placeholder="name@example.com" required>
+                  <span class="field-error-msg">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-field">
+                  <label for="detailVisitDate">Preferred Site Visit Date</label>
+                  <input type="date" id="detailVisitDate" name="visitDate" class="form-control">
+                </div>
+
+                <div class="form-field">
+                  <label for="detailQuestions">Specific Questions</label>
+                  <textarea id="detailQuestions" name="message" class="form-control" rows="3" placeholder="Inquire about floor level, parking, society dues, or price negotiation..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Schedule Site Visit</button>
+                <button type="button" class="btn btn-outline btn-block" style="margin-top: 0.75rem;" data-open-modal="consultation">General Consultation</button>
+
+                <p class="form-disclaimer">
+                  * Frontend demo form only. No user data is stored or transmitted.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Similar Properties Section -->
+    <section class="section section-bg-beige">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Alternative Options</span>
+          <h2 class="section-title">Similar Properties You May Consider</h2>
+          <p class="section-description">
+            Explore other handpicked listings with similar spatial specifications and price points.
+          </p>
+        </div>
+
+        <div class="properties-grid" id="similarPropertiesGrid">
+          <!-- Card 1 -->
+          <article class="property-card reveal">
+            <div class="property-card-image-wrap">
+              <img src="images/property-02.jpg" alt="Independent Villa" style="width: 100%; height: 220px; object-fit: cover; display: block;" loading="lazy">
+              <div class="property-card-tags">
+                <span class="badge badge-gold">BUY</span>
+                <span class="badge badge-navy">RESIDENTIAL</span>
+              </div>
+              <button class="property-fav-btn" data-property-id="prop-2" aria-label="Save Property">
+                <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+            </div>
+            <div class="property-card-body">
+              <div class="property-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Demo Location 02, Green Meadows</span>
+              </div>
+              <h3 class="property-title">
+                <a href="property-details.html?id=prop-2">Independent Villa – Demo Location 02</a>
+              </h3>
+              <div class="property-price">
+                ₹1.85 Cr (Illustrative)
+                <span class="label">Guide Price • Illustrative Demo</span>
+              </div>
+              <div class="property-specs">
+                <div class="property-spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                  <span>3,400 sq.ft</span>
+                </div>
+                <div class="property-spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+                  <span>4 BHK</span>
+                </div>
+                <div class="property-spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  <span>2 Covered</span>
+                </div>
+              </div>
+              <p class="property-highlights">Private garden lawn, landscaped terrace lounge, independent duplex layout with premium bespoke woodwork.</p>
+              <div class="property-card-actions">
+                <a href="property-details.html?id=prop-2" class="btn btn-outline btn-sm">View Details</a>
+                <button class="btn btn-primary btn-sm" data-open-modal="consultation">Enquire Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="property-card reveal">
+            <div class="property-card-image-wrap">
+              <img src="images/property-03.jpg" alt="Residential Plot" style="width: 100%; height: 220px; object-fit: cover; display: block;" loading="lazy">
+              <div class="property-card-tags">
+                <span class="badge badge-gold">BUY</span>
+                <span class="badge badge-navy">LAND / PLOT</span>
+              </div>
+              <button class="property-fav-btn" data-property-id="prop-3" aria-label="Save Property">
+                <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </button>
+            </div>
+            <div class="property-card-body">
+              <div class="property-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Demo Location 03, Foothill Enclave</span>
+              </div>
+              <h3 class="property-title">
+                <a href="property-details.html?id=prop-3">Residential Plot – Demo Location 03</a>
+              </h3>
+              <div class="property-price">
+                ₹45,00,000 (Illustrative)
+                <span class="label">Guide Price • Illustrative Demo</span>
+              </div>
+              <div class="property-specs">
+                <div class="property-spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                  <span>2,400 sq.ft</span>
+                </div>
+                <div class="property-spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+                  <span>Gated Layout</span>
+                </div>
+                <div class="property-spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                  <span>Wide Road</span>
+                </div>
+              </div>
+              <p class="property-highlights">Gated township boundary with wide 40ft blacktop approach road, underground electrification, and park facing.</p>
+              <div class="property-card-actions">
+                <a href="property-details.html?id=prop-3" class="btn btn-outline btn-sm">View Details</a>
+                <button class="btn btn-primary btn-sm" data-open-modal="consultation">Enquire Now</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Gallery Lightbox Modal Popup -->
+  <div id="lightboxModal" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Expanded Gallery View">
+    <div class="lightbox-box">
+      <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <div class="lightbox-title" style="color: var(--primary-navy); font-weight: 700; margin-bottom: 1rem; font-family: var(--font-serif); font-size: 1.2rem;">Expanded Property View</div>
+      <div style="border-radius: var(--radius-sm); overflow: hidden; background: #000;">
+        <img id="lightboxImg" src="images/gallery-main-01.jpg" alt="Expanded Property Photograph" style="width: 100%; max-height: 550px; object-fit: contain; display: block;">
+      </div>
+      <div style="text-align: right; margin-top: 1rem;">
+        <span style="font-size: 0.8rem; color: var(--text-muted);">Press Esc or click outside to close preview</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-title">PROPERTY CONSULTANT</span>
+            <span class="brand-subtitle">Real Estate Advisory</span>
+          </a>
+          <p class="footer-desc">
+            Independent property consultancy providing transparent advisory, property selection, selling representation, and lease management for discerning clients.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span class="badge badge-demo">Portfolio Demo Website</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Our Advisory</a></li>
+            <li><a href="services.html">Consultancy Services</a></li>
+            <li><a href="buy-property.html">Buy Property</a></li>
+            <li><a href="sell-property.html">Sell Property</a></li>
+            <li><a href="rent.html">Rent & Lease</a></li>
+            <li><a href="investment.html">Investment Advisory</a></li>
+            <li><a href="blog.html">Property Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Property Types</h4>
+          <ul class="footer-links">
+            <li><a href="buy-property.html">Apartments & Flats</a></li>
+            <li><a href="buy-property.html">Independent Villas</a></li>
+            <li><a href="buy-property.html">Residential Plots</a></li>
+            <li><a href="buy-property.html">Commercial Offices</a></li>
+            <li><a href="buy-property.html">Retail Showrooms</a></li>
+            <li><a href="rent.html">Warehouse & Logistics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Demo Contact</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Property Consultant Office, Demo City, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 90000 00000 (Demo Only)</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>demo@example.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 PROPERTY CONSULTANT. Demo portfolio showcase. Generic illustrative content.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Privacy Policy (Demo)</a>
+          <a href="contact.html">Terms of Service (Demo)</a>
+          <a href="contact.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Book A Consultation Modal Popup -->
+  <div id="consultationModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitleDetail">
+    <div class="modal-content">
+      <button class="modal-close-btn" data-close-modal aria-label="Close Modal">&times;</button>
+      <div class="modal-header">
+        <span class="badge badge-gold" style="margin-bottom: 0.5rem;">Advisory Session</span>
+        <h2 id="modalTitleDetail" style="font-size: 1.6rem; margin-bottom: 0.25rem;">Book a Consultation</h2>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0;">Connect with our real estate consultant to discuss your property requirements.</p>
+      </div>
+
+      <form data-validate id="modalConsultationFormDetail">
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="modalFullNameDetail">Full Name <span class="required">*</span></label>
+            <input type="text" id="modalFullNameDetail" name="fullName" class="form-control" placeholder="Enter your name" required>
+            <span class="field-error-msg">Please enter your full name.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="modalPhoneDetail">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="modalPhoneDetail" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+            <span class="field-error-msg">Please enter a valid phone number.</span>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="modalEmailDetail">Email Address <span class="required">*</span></label>
+            <input type="email" id="modalEmailDetail" name="email" class="form-control" placeholder="name@example.com" required>
+            <span class="field-error-msg">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="modalDateDetail">Preferred Date <span class="required">*</span></label>
+            <input type="date" id="modalDateDetail" name="preferredDate" class="form-control" required>
+            <span class="field-error-msg">Please select a preferred date.</span>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="modalServiceDetail">Interested Service <span class="required">*</span></label>
+            <select id="modalServiceDetail" name="service" class="form-control" required>
+              <option value="buy" selected>Property Buying Advisory</option>
+              <option value="sell">Property Selling Representation</option>
+              <option value="rent">Rental & Leasing Assistance</option>
+              <option value="investment">Investment Planning & Evaluation</option>
+              <option value="evaluation">Property Site Evaluation</option>
+            </select>
+            <span class="field-error-msg">Please choose a service.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="modalCategoryDetail">Property Category <span class="required">*</span></label>
+            <select id="modalCategoryDetail" name="category" class="form-control" required>
+              <option value="residential" selected>Residential (Apartment / Villa)</option>
+              <option value="commercial">Commercial (Office / Retail)</option>
+              <option value="plot">Plot / Land</option>
+              <option value="industrial">Industrial / Warehouse</option>
+            </select>
+            <span class="field-error-msg">Please select a property category.</span>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="modalMessageDetail">Your Requirements & Questions</label>
+          <textarea id="modalMessageDetail" name="message" class="form-control" rows="3" placeholder="Tell us about your budget, target location, or specific questions..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Confirm Consultation Request</button>
+
+        <p class="form-disclaimer">
+          * Frontend demonstration form only. No personal data is stored or transmitted.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+  <script>
+    // URL Query Parameter handling for Property Detail dynamic sync
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const propId = urlParams.get('id');
+
+      if (propId && typeof demoProperties !== 'undefined') {
+        const found = demoProperties.find(p => p.id === propId);
+        if (found) {
+          document.title = found.title + " | Property Consultant";
+          document.getElementById('detailBreadcrumb').textContent = found.title;
+          document.getElementById('detailTitle').textContent = found.title;
+          document.getElementById('detailLocation').textContent = found.location;
+          document.getElementById('detailPrice').textContent = found.priceFormatted;
+          document.getElementById('detailSize').textContent = found.size;
+          document.getElementById('detailConfig').textContent = found.bedrooms;
+          document.getElementById('detailParking').textContent = found.parking;
+          document.getElementById('detailStatus').textContent = found.status;
+          document.getElementById('detailDesc').textContent = found.highlights + " Formulated under standard engineering practices with certified statutory permissions and optimal square footage distribution.";
+          document.getElementById('detailTypeBadge').textContent = found.type.toUpperCase() + (found.type === 'rent' ? ' • FOR LEASE' : ' • FOR SALE');
+          document.getElementById('detailCategoryBadge').textContent = found.category.toUpperCase() + " " + found.subtype.toUpperCase();
+          if (found.image) {
+            const mainImg = document.getElementById('detailMainImg');
+            if (mainImg) mainImg.src = found.image;
+            const lightboxImg = document.getElementById('lightboxImg');
+            if (lightboxImg) lightboxImg.src = found.image;
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

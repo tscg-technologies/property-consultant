@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Guides & Articles | Property Consultant Advisory</title>
+  <meta name="description" content="Educational real estate guides: checklist for property buyers, buying vs renting comparisons, commercial property basics, and title deed verification.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <aside class="header-top" aria-label="Quick contact and demo notice">
+    <div class="container">
+      <div class="header-top-info">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +91 90000 00000 (Demo)</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> demo@example.com</span>
+      </div>
+      <div class="header-top-badge">
+        <span>Portfolio Demo • Frontend Showcase</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Property Consultant Home">
+          <span class="brand-title">PROPERTY CONSULTANT</span>
+          <span class="brand-subtitle">Real Estate Advisory</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="buy-property.html" class="nav-link">Buy Property</a></li>
+          <li><a href="sell-property.html" class="nav-link">Sell Property</a></li>
+          <li><a href="rent.html" class="nav-link">Rent & Lease</a></li>
+          <li><a href="investment.html" class="nav-link">Investment</a></li>
+          <li><a href="blog.html" class="nav-link active">Property Guides</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn btn-primary btn-sm" data-open-modal="consultation">Book a Consultation</button>
+          <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <span>Property Guides</span>
+        </div>
+        <h1 class="page-title">Property Guides & Market Knowledge</h1>
+        <p class="page-subtitle">
+          Unbiased educational insights, transaction checklists, and advisory perspectives to help you navigate property decisions intelligently.
+        </p>
+      </div>
+    </section>
+
+    <!-- Articles Grid Section (8 Guides) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Real Estate Education</span>
+          <h2 class="section-title">Latest Articles & Advisory Guides</h2>
+          <p class="section-description">
+            Practical knowledge written from an independent consultant's perspective to protect your time and capital.
+          </p>
+        </div>
+
+        <div class="articles-grid">
+          <!-- Article 1 -->
+          <article class="article-card reveal">
+            <div style="overflow: hidden; height: 210px;">
+              <img src="images/blog-buyer-guide.jpg" alt="Buyer Checklist Guide" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+            </div>
+            <div class="article-body">
+              <div class="article-meta">
+                <span class="badge badge-gold">Buying Advisory</span>
+                <span>Demo Date • 6 min read</span>
+              </div>
+              <h3 class="article-title">
+                <a href="#article-1" onclick="window.showArticleModal('Important Things to Check Before Buying a Property', 'Prior to putting down earnest money, buyers must verify three non-negotiable vectors: legal title chain dating back 30 years, municipal sanction approval matching the as-built layout, and total cost of possession including clubhouse and maintenance funds.')">Important Things to Check Before Buying a Property</a>
+              </h3>
+              <p class="article-desc">
+                From title continuity and municipal sanction plans to maintenance deposits and carpet ratio audits—learn what most buyers overlook.
+              </p>
+              <a href="#article-1" class="article-link" onclick="window.showArticleModal('Important Things to Check Before Buying a Property', 'Prior to putting down earnest money, buyers must verify three non-negotiable vectors: legal title chain dating back 30 years, municipal sanction approval matching the as-built layout, and total cost of possession including clubhouse and maintenance funds.')">
+                Read Guide <span>&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="article-card reveal">
+            <!-- Replace this placeholder with guide cover image -->
+            <div class="image-placeholder ratio-16-9">
+              <div class="placeholder-icon">
+                <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              </div>
+              <div class="placeholder-title">RESIDENTIAL GUIDE IMAGE</div>
+              <span class="placeholder-tag">Google Flow Import Ready</span>
+            </div>
+            <div class="article-body">
+              <div class="article-meta">
+                <span class="badge badge-navy">Home Selection</span>
+                <span>Demo Date • 5 min read</span>
+              </div>
+              <h3 class="article-title">
+                <a href="#article-2" onclick="window.showArticleModal('How to Choose the Right Residential Property', 'Evaluating lifestyle compatibility involves examining physical floor plans for natural ventilation, checking density per acre, understanding water sustainability frameworks, and testing actual peak-hour commute times.')">How to Choose the Right Residential Property</a>
+              </h3>
+              <p class="article-desc">
+                Balancing carpet area efficiency, natural sunlight orientation, family commute corridors, and residential community culture.
+              </p>
+              <a href="#article-2" class="article-link" onclick="window.showArticleModal('How to Choose the Right Residential Property', 'Evaluating lifestyle compatibility involves examining physical floor plans for natural ventilation, checking density per acre, understanding water sustainability frameworks, and testing actual peak-hour commute times.')">
+                Read Guide <span>&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="article-card reveal">
+            <!-- Replace this placeholder with guide cover image -->
+            <div class="image-placeholder ratio-16-9">
+              <div class="placeholder-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <div class="placeholder-title">BUY VS RENT IMAGE</div>
+              <span class="placeholder-tag">Google Flow Import Ready</span>
+            </div>
+            <div class="article-body">
+              <div class="article-meta">
+                <span class="badge badge-gold">Financial Analysis</span>
+                <span>Demo Date • 7 min read</span>
+              </div>
+              <h3 class="article-title">
+                <a href="#article-3" onclick="window.showArticleModal('Buying vs Renting: Understanding Your Options', 'Comparing rent-to-price ratios, opportunity cost of upfront down payments, personal career mobility, and emotional peace of mind when deciding whether to buy or lease.')">Buying vs Renting: Understanding Your Options</a>
+              </h3>
+              <p class="article-desc">
+                An objective breakdown of rent-to-price ratios, capital lock-in, tax considerations, and flexibility factors.
+              </p>
+              <a href="#article-3" class="article-link" onclick="window.showArticleModal('Buying vs Renting: Understanding Your Options', 'Comparing rent-to-price ratios, opportunity cost of upfront down payments, personal career mobility, and emotional peace of mind when deciding whether to buy or lease.')">
+                Read Guide <span>&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="article-card reveal">
+            <div style="overflow: hidden; height: 210px;">
+              <img src="images/blog-commercial-guide.jpg" alt="Commercial Property Guide" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+            </div>
+            <div class="article-body">
+              <div class="article-meta">
+                <span class="badge badge-navy">Commercial</span>
+                <span>Demo Date • 8 min read</span>
+              </div>
+              <h3 class="article-title">
+                <a href="#article-4" onclick="window.showArticleModal('A Beginner\'s Guide to Commercial Property', 'Commercial real estate differs drastically from residential: leases run 3 to 9 years, fit-outs require substantial capital, and tenant profile dictates asset value far more than aesthetic finish.')">A Beginner's Guide to Commercial Property</a>
+              </h3>
+              <p class="article-desc">
+                Understanding floor loading capacities, lease lock-ins, escalation clauses, and tenant qualification for business premises.
+              </p>
+              <a href="#article-4" class="article-link" onclick="window.showArticleModal('A Beginner\'s Guide to Commercial Property', 'Commercial real estate differs drastically from residential: leases run 3 to 9 years, fit-outs require substantial capital, and tenant profile dictates asset value far more than aesthetic finish.')">
+                Read Guide <span>&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 5 -->
+          <article class="article-card reveal">
+            <div style="overflow: hidden; height: 210px;">
+              <img src="images/blog-selling-prep.jpg" alt="Prepare Property for Sale" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+            </div>
+            <div class="article-body">
+              <div class="article-meta">
+                <span class="badge badge-gold">Seller Advice</span>
+                <span>Demo Date • 5 min read</span>
+              </div>
+              <h3 class="article-title">
+                <a href="#article-5" onclick="window.showArticleModal('How to Prepare Your Property for Sale', 'First impressions directly influence offers. Fixing minor plumbing dampness, decluttering personal furniture, and gathering all title paperwork beforehand builds immense buyer confidence.')">How to Prepare Your Property for Sale</a>
+              </h3>
+              <p class="article-desc">
+                Key staging adjustments, essential repairs that yield high returns, and how to organize paperwork for swift closing.
+              </p>
+              <a href="#article-5" class="article-link" onclick="window.showArticleModal('How to Prepare Your Property for Sale', 'First impressions directly influence offers. Fixing minor plumbing dampness, decluttering personal furniture, and gathering all title paperwork beforehand builds immense buyer confidence.')">
+                Read Guide <span>&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 6 -->
+          <article class="article-card reveal">
+            <!-- Replace this placeholder with guide cover image -->
+            <div class="image-placeholder ratio-16-9">
+              <div class="placeholder-icon">
+                <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <div class="placeholder-title">INVESTMENT CRITERIA IMAGE</div>
+              <span class="placeholder-tag">Google Flow Import Ready</span>
+            </div>
+            <div class="article-body">
+              <div class="article-meta">
+                <span class="badge badge-navy">Investment</span>
+                <span>Demo Date • 6 min read</span>
+              </div>
+              <h3 class="article-title">
+                <a href="#article-6" onclick="window.showArticleModal('Factors to Consider Before Investing in Real Estate', 'Never invest based on future infrastructure promises alone. Assess existing rental absorption, compute true net yields after property tax, and ensure you have an emergency liquidity cushion.')">Factors to Consider Before Investing in Real Estate</a>
+              </h3>
+              <p class="article-desc">
+                Evaluating macro growth corridors, micro-market inventory absorption, and calculating realistic net yields.
+              </p>
+              <a href="#article-6" class="article-link" onclick="window.showArticleModal('Factors to Consider Before Investing in Real Estate', 'Never invest based on future infrastructure promises alone. Assess existing rental absorption, compute true net yields after property tax, and ensure you have an emergency liquidity cushion.')">
+                Read Guide <span>&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 7 -->
+          <article class="article-card reveal">
+            <!-- Replace this placeholder with guide cover image -->
+            <div class="image-placeholder ratio-16-9">
+              <div class="placeholder-icon">
+                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/></svg>
+              </div>
+              <div class="placeholder-title">LEGAL DOCUMENTS IMAGE</div>
+              <span class="placeholder-tag">Google Flow Import Ready</span>
+            </div>
+            <div class="article-body">
+              <div class="article-meta">
+                <span class="badge badge-gold">Due Diligence</span>
+                <span>Demo Date • 9 min read</span>
+              </div>
+              <h3 class="article-title">
+                <a href="#article-7" onclick="window.showArticleModal('Understanding Property Documents', 'Demystifying the essential paperwork: Sale Deed, Title Search Report, Encumbrance Certificate, Occupancy Certificate (OC), and municipal Khata extract.')">Understanding Property Documents</a>
+              </h3>
+              <p class="article-desc">
+                A plain-English breakdown of Encumbrance Certificates, Occupancy Certificates, Khata transfers, and master sanction plans.
+              </p>
+              <a href="#article-7" class="article-link" onclick="window.showArticleModal('Understanding Property Documents', 'Demystifying the essential paperwork: Sale Deed, Title Search Report, Encumbrance Certificate, Occupancy Certificate (OC), and municipal Khata extract.')">
+                Read Guide <span>&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 8 -->
+          <article class="article-card reveal">
+            <!-- Replace this placeholder with guide cover image -->
+            <div class="image-placeholder ratio-16-9">
+              <div class="placeholder-icon">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </div>
+              <div class="placeholder-title">SHORTLISTING IMAGE</div>
+              <span class="placeholder-tag">Google Flow Import Ready</span>
+            </div>
+            <div class="article-body">
+              <div class="article-meta">
+                <span class="badge badge-navy">Advisory Tips</span>
+                <span>Demo Date • 4 min read</span>
+              </div>
+              <h3 class="article-title">
+                <a href="#article-8" onclick="window.showArticleModal('How to Shortlist Properties Efficiently', 'Stop wasting weekends visiting ill-matched properties. Learn how setting three strict dealbreakers and two flexible preferences narrows dozens of options to the top 3.')">How to Shortlist Properties Efficiently</a>
+              </h3>
+              <p class="article-desc">
+                Eliminate ghost ads, filter out duplicate broker listings, and build an objective matrix to compare final contenders.
+              </p>
+              <a href="#article-8" class="article-link" onclick="window.showArticleModal('How to Shortlist Properties Efficiently', 'Stop wasting weekends visiting ill-matched properties. Learn how setting three strict dealbreakers and two flexible preferences narrows dozens of options to the top 3.')">
+                Read Guide <span>&rarr;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="demo-disclaimer-box reveal" style="text-align: center; margin-top: 3.5rem;">
+          <strong>Educational Demo Disclaimer:</strong> All articles and guides are generic sample materials curated for portfolio demonstration purposes only. They do not constitute formal legal, financial, or regulatory advice.
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation CTA -->
+    <section class="section section-bg-beige">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="container">
+            <h2>Have Questions About a Specific Real Estate Topic?</h2>
+            <p>
+              Speak directly with an advisory consultant to address your property questions with transparent, factual insights.
+            </p>
+            <div class="btn-group">
+              <button class="btn btn-primary" data-open-modal="consultation">Book Advisory Session</button>
+              <a href="contact.html" class="btn btn-outline-light">Contact Our Desk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Article Modal Reader (Interactive Vanilla JS Reader) -->
+  <div id="articleModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-content" style="max-width: 700px;">
+      <button class="modal-close-btn" onclick="document.getElementById('articleModal').classList.remove('active')">&times;</button>
+      <div class="modal-header">
+        <span class="badge badge-gold" style="margin-bottom: 0.5rem;">Educational Guide</span>
+        <h2 id="articleModalTitle" style="font-size: 1.5rem; margin-bottom: 0.5rem;">Article Title</h2>
+        <span style="font-size: 0.8rem; color: var(--text-muted);">Published for Demonstration • Property Consultant Advisory Desk</span>
+      </div>
+      <div style="line-height: 1.7; color: var(--text-charcoal); font-size: 0.98rem;" id="articleModalBody">
+        Content...
+      </div>
+      <div style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 0.8rem; color: var(--text-muted);">Generic Educational Content</span>
+        <button class="btn btn-primary btn-sm" onclick="document.getElementById('articleModal').classList.remove('active'); document.querySelector('[data-open-modal=\'consultation\']').click();">Ask a Consultant</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-title">PROPERTY CONSULTANT</span>
+            <span class="brand-subtitle">Real Estate Advisory</span>
+          </a>
+          <p class="footer-desc">
+            Independent property consultancy providing transparent advisory, property selection, selling representation, and lease management for discerning clients.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span class="badge badge-demo">Portfolio Demo Website</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Our Advisory</a></li>
+            <li><a href="services.html">Consultancy Services</a></li>
+            <li><a href="buy-property.html">Buy Property</a></li>
+            <li><a href="sell-property.html">Sell Property</a></li>
+            <li><a href="rent.html">Rent & Lease</a></li>
+            <li><a href="investment.html">Investment Advisory</a></li>
+            <li><a href="blog.html">Property Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Property Types</h4>
+          <ul class="footer-links">
+            <li><a href="buy-property.html">Apartments & Flats</a></li>
+            <li><a href="buy-property.html">Independent Villas</a></li>
+            <li><a href="buy-property.html">Residential Plots</a></li>
+            <li><a href="buy-property.html">Commercial Offices</a></li>
+            <li><a href="buy-property.html">Retail Showrooms</a></li>
+            <li><a href="rent.html">Warehouse & Logistics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Demo Contact</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Property Consultant Office, Demo City, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 90000 00000 (Demo Only)</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>demo@example.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 PROPERTY CONSULTANT. Demo portfolio showcase. Generic illustrative content.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Privacy Policy (Demo)</a>
+          <a href="contact.html">Terms of Service (Demo)</a>
+          <a href="contact.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Book A Consultation Modal Popup -->
+  <div id="consultationModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitleBlog">
+    <div class="modal-content">
+      <button class="modal-close-btn" data-close-modal aria-label="Close Modal">&times;</button>
+      <div class="modal-header">
+        <span class="badge badge-gold" style="margin-bottom: 0.5rem;">Advisory Session</span>
+        <h2 id="modalTitleBlog" style="font-size: 1.6rem; margin-bottom: 0.25rem;">Book a Consultation</h2>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0;">Connect with our real estate consultant to discuss your property requirements.</p>
+      </div>
+
+      <form data-validate id="modalConsultationFormBlog">
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="modalFullNameBlog">Full Name <span class="required">*</span></label>
+            <input type="text" id="modalFullNameBlog" name="fullName" class="form-control" placeholder="Enter your name" required>
+            <span class="field-error-msg">Please enter your full name.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="modalPhoneBlog">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="modalPhoneBlog" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+            <span class="field-error-msg">Please enter a valid phone number.</span>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="modalEmailBlog">Email Address <span class="required">*</span></label>
+            <input type="email" id="modalEmailBlog" name="email" class="form-control" placeholder="name@example.com" required>
+            <span class="field-error-msg">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="modalDateBlog">Preferred Date <span class="required">*</span></label>
+            <input type="date" id="modalDateBlog" name="preferredDate" class="form-control" required>
+            <span class="field-error-msg">Please select a preferred date.</span>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="modalServiceBlog">Interested Service <span class="required">*</span></label>
+            <select id="modalServiceBlog" name="service" class="form-control" required>
+              <option value="buy">Property Buying Advisory</option>
+              <option value="sell">Property Selling Representation</option>
+              <option value="rent">Rental & Leasing Assistance</option>
+              <option value="investment">Investment Planning & Evaluation</option>
+              <option value="evaluation">Property Site Evaluation</option>
+            </select>
+            <span class="field-error-msg">Please choose a service.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="modalCategoryBlog">Property Category <span class="required">*</span></label>
+            <select id="modalCategoryBlog" name="category" class="form-control" required>
+              <option value="residential">Residential (Apartment / Villa)</option>
+              <option value="commercial">Commercial (Office / Retail)</option>
+              <option value="plot">Plot / Land</option>
+              <option value="industrial">Industrial / Warehouse</option>
+            </select>
+            <span class="field-error-msg">Please select a property category.</span>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="modalMessageBlog">Your Requirements & Questions</label>
+          <textarea id="modalMessageBlog" name="message" class="form-control" rows="3" placeholder="Tell us about your budget, target location, or specific questions..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Confirm Consultation Request</button>
+
+        <p class="form-disclaimer">
+          * Frontend demonstration form only. No personal data is stored or transmitted.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+  <script>
+    window.showArticleModal = function(title, summary) {
+      document.getElementById('articleModalTitle').textContent = title;
+      document.getElementById('articleModalBody').innerHTML = `
+        <p><strong>Executive Summary:</strong> ${summary}</p>
+        <p>In property transactions, acquiring verified clarity early is the most reliable safeguard against unanticipated litigation, costly delays, or inflated price traps. Professional consultancy provides an essential independent layer between buyers and developers or sellers.</p>
+        <p>We recommend conducting comprehensive site visits at different times of the day (morning rush hour and evening weekends) to gauge actual traffic congestion, neighborhood noise levels, and municipal water supply consistency before executing legal agreements.</p>
+        <div class="demo-disclaimer-box" style="margin-top: 1.5rem;">
+          <strong>Educational Notice:</strong> This article content is a generic demo overview compiled for website demonstration purposes.
+        </div>
+      `;
+      document.getElementById('articleModal').classList.add('active');
+    };
+  </script>
+</body>
+</html>

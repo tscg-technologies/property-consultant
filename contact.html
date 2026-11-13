@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Property Consultant Real Estate Advisory</title>
+  <meta name="description" content="Contact Property Consultant for residential and commercial real estate guidance, office visits, or to schedule a one-on-one advisory session.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <aside class="header-top" aria-label="Quick contact and demo notice">
+    <div class="container">
+      <div class="header-top-info">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +91 90000 00000 (Demo)</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> demo@example.com</span>
+      </div>
+      <div class="header-top-badge">
+        <span>Portfolio Demo • Frontend Showcase</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Property Consultant Home">
+          <span class="brand-title">PROPERTY CONSULTANT</span>
+          <span class="brand-subtitle">Real Estate Advisory</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="buy-property.html" class="nav-link">Buy Property</a></li>
+          <li><a href="sell-property.html" class="nav-link">Sell Property</a></li>
+          <li><a href="rent.html" class="nav-link">Rent & Lease</a></li>
+          <li><a href="investment.html" class="nav-link">Investment</a></li>
+          <li><a href="blog.html" class="nav-link">Property Guides</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn btn-primary btn-sm" data-open-modal="consultation">Book a Consultation</button>
+          <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <span>Contact</span>
+        </div>
+        <h1 class="page-title">Connect with Property Consultant</h1>
+        <p class="page-subtitle">
+          Schedule an in-person advisory meeting, request a telephone consultation, or submit specific property questions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Contact Section (Split: Form & Info Box) -->
+    <section class="section">
+      <div class="container">
+        <div class="features-split">
+          <!-- Form Left -->
+          <div class="reveal">
+            <div class="form-card">
+              <span class="section-eyebrow">Direct Advisory Desk</span>
+              <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Schedule a Consultation</h2>
+              <p style="font-size: 0.92rem; margin-bottom: 1.75rem;">
+                Fill out the form below. We will review your criteria and respond with shortlisted recommendations or schedule an advisory discussion.
+              </p>
+
+              <form data-validate id="mainContactForm">
+                <div class="form-grid-2">
+                  <div class="form-field">
+                    <label for="contactFullName">Full Name <span class="required">*</span></label>
+                    <input type="text" id="contactFullName" name="fullName" class="form-control" placeholder="Your name" required>
+                    <span class="field-error-msg">Please enter your full name.</span>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="contactEmail">Email Address <span class="required">*</span></label>
+                    <input type="email" id="contactEmail" name="email" class="form-control" placeholder="name@example.com" required>
+                    <span class="field-error-msg">Please enter a valid email address.</span>
+                  </div>
+                </div>
+
+                <div class="form-grid-2">
+                  <div class="form-field">
+                    <label for="contactPhone">Phone Number <span class="required">*</span></label>
+                    <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+                    <span class="field-error-msg">Please enter a valid phone number.</span>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="contactDate">Preferred Consultation Date <span class="required">*</span></label>
+                    <input type="date" id="contactDate" name="preferredDate" class="form-control" required>
+                    <span class="field-error-msg">Please choose a preferred date.</span>
+                  </div>
+                </div>
+
+                <div class="form-grid-2">
+                  <div class="form-field">
+                    <label for="contactService">Interested Service <span class="required">*</span></label>
+                    <select id="contactService" name="service" class="form-control" required>
+                      <option value="">Select Service</option>
+                      <option value="buy">Property Buying Assistance</option>
+                      <option value="sell">Property Selling Representation</option>
+                      <option value="rent">Rental & Leasing Advisory</option>
+                      <option value="investment">Real Estate Investment Advisory</option>
+                      <option value="evaluation">Site & Document Evaluation</option>
+                    </select>
+                    <span class="field-error-msg">Please select an interested service.</span>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="contactCategory">Property Category <span class="required">*</span></label>
+                    <select id="contactCategory" name="category" class="form-control" required>
+                      <option value="">Select Category</option>
+                      <option value="residential">Residential (Apartment / Villa)</option>
+                      <option value="commercial">Commercial (Office / Retail)</option>
+                      <option value="plot">Plot / Land</option>
+                      <option value="industrial">Warehouse / Industrial</option>
+                    </select>
+                    <span class="field-error-msg">Please choose a property category.</span>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="contactIntent">Transaction Nature <span class="required">*</span></label>
+                  <select id="contactIntent" name="intent" class="form-control" required>
+                    <option value="">Select Intent</option>
+                    <option value="buy">Looking to Buy</option>
+                    <option value="sell">Looking to Sell</option>
+                    <option value="rent">Looking to Rent / Lease</option>
+                    <option value="invest">General Investment Advisory</option>
+                  </select>
+                  <span class="field-error-msg">Please select transaction nature.</span>
+                </div>
+
+                <div class="form-field">
+                  <label for="contactMessage">Message & Property Requirements</label>
+                  <textarea id="contactMessage" name="message" class="form-control" rows="4" placeholder="Mention your target micro-market, budget range, spatial requirements, or any specific questions..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Send Consultation Request</button>
+
+                <p class="form-disclaimer">
+                  * Note: This is a frontend demonstration showcase. Submitted details are processed locally in your browser and are not transmitted or stored.
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!-- Contact Info Box Right -->
+          <div class="reveal">
+            <div class="contact-info-card">
+              <h3>Demo Office Information</h3>
+              <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 2rem;">
+                Visit our central consultation lounge or reach out via our illustrative helpline channels.
+              </p>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-text">
+                  <h5>Office Address</h5>
+                  <p>Property Consultant Office, Demo City, India</p>
+                  <span style="font-size: 0.75rem; color: var(--accent-gold);">Illustrative Demo Address</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="contact-text">
+                  <h5>Telephone Helpline</h5>
+                  <p>+91 90000 00000</p>
+                  <span style="font-size: 0.75rem; color: var(--accent-gold);">Demo Contact Number</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-text">
+                  <h5>Email Desk</h5>
+                  <p>demo@example.com</p>
+                  <span style="font-size: 0.75rem; color: var(--accent-gold);">Demonstration Mailbox</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="contact-text">
+                  <h5>Consultation Working Hours</h5>
+                  <p>Monday – Saturday: 9:00 AM – 6:00 PM</p>
+                  <p style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.6); margin-top: 2px;">Sunday: Prior Appointments Only</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location Map Container -->
+            <div style="margin-top: 2rem; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
+              <img src="images/location-map.jpg" alt="Demo City Real Estate Map" style="width: 100%; height: 260px; object-fit: cover; display: block;" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- General Inquiries FAQ Section -->
+    <section class="section section-bg-beige">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Clear Expectations</span>
+          <h2 class="section-title">Consultation Inquiries & Protocol</h2>
+          <p class="section-description">
+            What to expect when engaging Property Consultant for your real estate journey.
+          </p>
+        </div>
+
+        <div class="accordion reveal">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Is there a fee for the initial exploratory consultation?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Our initial 30-minute discovery session is completely complimentary. We discuss your budget, preferred sectors, and timeline to understand whether our advisory scope aligns with your goals before entering any formal representation mandate.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>How soon can we arrange site visits after submitting our requirement?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Following your intake brief, our desk compiles a curated comparison sheet within 24 to 48 hours. Once you review and select the properties of interest, accompanied physical walkthroughs are scheduled at your preferred convenience.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Do you assist Outstation and NRI clients with remote verification?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Yes. We offer video walkthroughs, high-resolution photography audits, and coordinate independent legal verification reports to support non-resident and outstation buyers effectively.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-title">PROPERTY CONSULTANT</span>
+            <span class="brand-subtitle">Real Estate Advisory</span>
+          </a>
+          <p class="footer-desc">
+            Independent property consultancy providing transparent advisory, property selection, selling representation, and lease management for discerning clients.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span class="badge badge-demo">Portfolio Demo Website</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Our Advisory</a></li>
+            <li><a href="services.html">Consultancy Services</a></li>
+            <li><a href="buy-property.html">Buy Property</a></li>
+            <li><a href="sell-property.html">Sell Property</a></li>
+            <li><a href="rent.html">Rent & Lease</a></li>
+            <li><a href="investment.html">Investment Advisory</a></li>
+            <li><a href="blog.html">Property Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Property Types</h4>
+          <ul class="footer-links">
+            <li><a href="buy-property.html">Apartments & Flats</a></li>
+            <li><a href="buy-property.html">Independent Villas</a></li>
+            <li><a href="buy-property.html">Residential Plots</a></li>
+            <li><a href="buy-property.html">Commercial Offices</a></li>
+            <li><a href="buy-property.html">Retail Showrooms</a></li>
+            <li><a href="rent.html">Warehouse & Logistics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Demo Contact</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Property Consultant Office, Demo City, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 90000 00000 (Demo Only)</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>demo@example.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 PROPERTY CONSULTANT. Demo portfolio showcase. Generic illustrative content.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Privacy Policy (Demo)</a>
+          <a href="contact.html">Terms of Service (Demo)</a>
+          <a href="contact.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Book A Consultation Modal Popup -->
+  <div id="consultationModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitleContact">
+    <div class="modal-content">
+      <button class="modal-close-btn" data-close-modal aria-label="Close Modal">&times;</button>
+      <div class="modal-header">
+        <span class="badge badge-gold" style="margin-bottom: 0.5rem;">Advisory Session</span>
+        <h2 id="modalTitleContact" style="font-size: 1.6rem; margin-bottom: 0.25rem;">Book a Consultation</h2>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0;">Connect with our real estate consultant to discuss your property requirements.</p>
+      </div>
+
+      <form data-validate id="modalConsultationFormContact">
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="modalFullNameCont">Full Name <span class="required">*</span></label>
+            <input type="text" id="modalFullNameCont" name="fullName" class="form-control" placeholder="Enter your name" required>
+            <span class="field-error-msg">Please enter your full name.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="modalPhoneCont">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="modalPhoneCont" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+            <span class="field-error-msg">Please enter a valid phone number.</span>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="modalEmailCont">Email Address <span class="required">*</span></label>
+            <input type="email" id="modalEmailCont" name="email" class="form-control" placeholder="name@example.com" required>
+            <span class="field-error-msg">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="modalDateCont">Preferred Date <span class="required">*</span></label>
+            <input type="date" id="modalDateCont" name="preferredDate" class="form-control" required>
+            <span class="field-error-msg">Please select a preferred date.</span>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="modalServiceCont">Interested Service <span class="required">*</span></label>
+            <select id="modalServiceCont" name="service" class="form-control" required>
+              <option value="buy">Property Buying Advisory</option>
+              <option value="sell">Property Selling Representation</option>
+              <option value="rent">Rental & Leasing Assistance</option>
+              <option value="investment">Investment Planning & Evaluation</option>
+              <option value="evaluation">Property Site Evaluation</option>
+            </select>
+            <span class="field-error-msg">Please choose a service.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="modalCategoryCont">Property Category <span class="required">*</span></label>
+            <select id="modalCategoryCont" name="category" class="form-control" required>
+              <option value="residential">Residential (Apartment / Villa)</option>
+              <option value="commercial">Commercial (Office / Retail)</option>
+              <option value="plot">Plot / Land</option>
+              <option value="industrial">Industrial / Warehouse</option>
+            </select>
+            <span class="field-error-msg">Please select a property category.</span>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="modalMessageCont">Your Requirements & Questions</label>
+          <textarea id="modalMessageCont" name="message" class="form-control" rows="3" placeholder="Tell us about your budget, target location, or specific questions..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Confirm Consultation Request</button>
+
+        <p class="form-disclaimer">
+          * Frontend demonstration form only. No personal data is stored or transmitted.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

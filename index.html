@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Consultant | Premium Real Estate Advisory & Guidance</title>
+  <meta name="description" content="Property Consultant provides expert property advisory, buying, selling, renting, and investment guidance for residential and commercial real estate.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <aside class="header-top" aria-label="Quick contact and demo notice">
+    <div class="container">
+      <div class="header-top-info">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +91 90000 00000 (Demo)</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> demo@example.com</span>
+      </div>
+      <div class="header-top-badge">
+        <span>Portfolio Demo • Frontend Showcase</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Main Navigation Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Property Consultant Home">
+          <span class="brand-title">PROPERTY CONSULTANT</span>
+          <span class="brand-subtitle">Real Estate Advisory</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="buy-property.html" class="nav-link">Buy Property</a></li>
+          <li><a href="sell-property.html" class="nav-link">Sell Property</a></li>
+          <li><a href="rent.html" class="nav-link">Rent & Lease</a></li>
+         
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn btn-primary btn-sm" data-open-modal="consultation">Book a Consultation</button>
+          <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content reveal">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              Independent Advisory & Property Solutions
+            </div>
+            <h1 class="hero-headline">The Right Property. <span>The Right Guidance.</span></h1>
+            <p class="hero-subhead">
+              We empower homebuyers, sellers, tenants, and investors with unbiased property consultancy, market intelligence, rigorous verification assistance, and end-to-end transaction advisory.
+            </p>
+            <div class="hero-cta-group">
+              <a href="buy-property.html" class="btn btn-primary">Explore Properties</a>
+              <button class="btn btn-outline" data-open-modal="consultation">Book a Consultation</button>
+            </div>
+            <div class="hero-metrics">
+              <div class="metric-item">
+                <div class="metric-num">500+</div>
+                <div class="metric-label">Properties Advised</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-num">100%</div>
+                <div class="metric-label">Objective Advisory</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-num">15+</div>
+                <div class="metric-label">Prime Sectors</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media reveal">
+            <div class="hero-image-wrap" style="position: relative; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-lg);">
+              <img src="images/hero-main.jpg" alt="Property Consultant Luxury Architecture" style="width: 100%; height: 480px; object-fit: cover; display: block;" loading="eager">
+              <div style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; background: rgba(23, 43, 69, 0.85); backdrop-filter: blur(6px); color: #fff; padding: 1rem 1.25rem; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.15);">
+                <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent-gold); font-weight: 600; display: block; margin-bottom: 2px;">Prime Advisory Portfolio</span>
+                <span style="font-size: 0.95rem; font-weight: 600;">Discreet, Objective Guidance Across Premium Real Estate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Property Search Interface -->
+    <section class="search-container">
+      <div class="container">
+        <div class="search-box">
+          <div class="search-tabs">
+            <button type="button" class="search-tab-btn active" data-tab-purpose="all">All Properties</button>
+            <button type="button" class="search-tab-btn" data-tab-purpose="buy">Buy</button>
+            <button type="button" class="search-tab-btn" data-tab-purpose="rent">Rent / Lease</button>
+          </div>
+          <form id="propertySearchForm">
+            <input type="hidden" name="purpose" id="searchPurpose" value="all">
+            <div class="search-form-grid">
+              <div class="form-group">
+                <label for="searchType">Property Type</label>
+                <select id="searchType" name="type" class="form-control">
+                  <option value="all">All Types</option>
+                  <option value="residential">Residential Properties</option>
+                  <option value="commercial">Commercial Real Estate</option>
+                  <option value="apartment">Apartments & Flats</option>
+                  <option value="villa">Villas & Houses</option>
+                  <option value="plot">Plots & Land</option>
+                  <option value="office">Corporate Offices</option>
+                  <option value="retail">Retail Showrooms</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="searchLocation">Location</label>
+                <input type="text" id="searchLocation" name="location" class="form-control" placeholder="e.g. Sector, North Enclave">
+              </div>
+
+              <div class="form-group">
+                <label for="searchBudget">Budget Range</label>
+                <select id="searchBudget" name="budget" class="form-control">
+                  <option value="all">Any Budget</option>
+                  <option value="under-50l">Under ₹50 Lakhs</option>
+                  <option value="50l-1cr">₹50 L – ₹1 Crore</option>
+                  <option value="1cr-3cr">₹1 Cr – ₹3 Crores</option>
+                  <option value="above-3cr">Above ₹3 Crores</option>
+                  <option value="rent-under-50k">Rent: Under ₹50k/mo</option>
+                  <option value="rent-above-50k">Rent: ₹50k+/mo</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sortProperties">Sort By</label>
+                <select id="sortProperties" class="form-control">
+                  <option value="default">Featured First</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="title">Alphabetical (A-Z)</option>
+                </select>
+              </div>
+
+              <div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  Search
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Property Listings -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Handpicked Portfolio</span>
+          <h2 class="section-title">Featured Property Listings</h2>
+          <p class="section-description">
+            Explore curated residential apartments, independent villas, commercial spaces, and rental listings selected for quality, strategic location, and clear documentation.
+          </p>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="filter-toolbar reveal">
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter-category="all">All Properties</button>
+            <button class="filter-btn" data-filter-category="residential">Residential</button>
+            <button class="filter-btn" data-filter-category="commercial">Commercial</button>
+            <button class="filter-btn" data-filter-category="land">Land & Plots</button>
+          </div>
+          <div>
+            <span class="badge badge-demo">Illustrative Demo Data</span>
+          </div>
+        </div>
+
+        <!-- Dynamic properties loaded via vanilla JS -->
+        <div id="dynamicPropertiesGrid" class="properties-grid" data-page-type="all"></div>
+
+        <div style="text-align: center; margin-top: 3.5rem;" class="reveal">
+          <a href="buy-property.html" class="btn btn-outline">Browse All Buying Opportunities</a>
+          <a href="rent.html" class="btn btn-outline-gold" style="margin-left: 1rem;">View Rental Properties</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buy, Sell, Rent Highlight Grid -->
+    <section class="section section-bg-beige">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Comprehensive Solutions</span>
+          <h2 class="section-title">Buy, Sell & Rent with Confidence</h2>
+          <p class="section-description">
+            Whether you are securing your dream family home, liquidating an asset, or leasing corporate office space, our structured consultation guarantees transparent advisory every step of the way.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Buy Card -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="service-title">Property Buying Assistance</h3>
+            <p class="service-desc">
+              Tailored property search, comparative pricing analysis, site visit coordination, and negotiation support to secure the ideal residential or commercial asset.
+            </p>
+            <ul class="service-benefits">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Needs-based property shortlisting</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Objective builder track record assessment</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Pricing benchmarks & negotiation aid</li>
+            </ul>
+            <a href="buy-property.html" class="btn btn-outline btn-sm">Explore Buying Services</a>
+          </div>
+
+          <!-- Sell Card -->
+          <div class="service-card reveal">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+            </div>
+            <h3 class="service-title">Property Selling Assistance</h3>
+            <p class="service-desc">
+              Strategic presentation advisory, targeted market positioning, qualified buyer screening, and hassle-free site visit management for owners looking to sell.
+            </p>
+            <ul class="service-benefits">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Realistic market price guidance</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Genuine buyer verification</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Smooth paperwork coordination</li>
+            </ul>
+            <a href="sell-property.html" class="btn btn-outline btn-sm">Sell With Guidance</a>
+          </div>
+
+          <!-- Rent Card -->
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose a Property Consultant Section -->
+    <section class="section">
+      <div class="container">
+        <div class="features-split">
+          <div class="reveal">
+            <span class="section-eyebrow">Professional Advantage</span>
+            <h2 class="section-title">Why Engage an Independent Property Consultant?</h2>
+            <p>
+              Navigating the property market involves complex pricing dynamics, builder claims, and legal documentation. Unlike commission-only brokers who push specific inventory, an independent consultant represents your best interests.
+            </p>
+            
+            <div class="feature-list">
+              <div class="feature-item">
+                <div class="feature-item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div class="feature-item-content">
+                  <h4>Unbiased & Objective Guidance</h4>
+                  <p>We are not locked to single developers or projects. Our recommendations focus solely on your budget, timeline, and lifestyle priorities.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <div class="feature-item-content">
+                  <h4>True Market Valuation Insights</h4>
+                  <p>Avoid overpaying or under-pricing with realistic comparable transaction data and micro-market trend analysis.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="feature-item-content">
+                  <h4>End-to-End Time Savings</h4>
+                  <p>From initial screening to physical site visit coordination and paperwork review, we manage tedious logistics so you decide with clarity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <div style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-md);">
+              <img src="images/about-consulting.jpg" alt="Client Advisory Meeting" style="width: 100%; height: 380px; object-fit: cover; display: block;" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation Process Section -->
+    <section class="section section-bg-grey">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Structured Methodology</span>
+          <h2 class="section-title">Our Consultation Process</h2>
+          <p class="section-description">
+            A clear 4-step framework designed to eliminate guesswork, reduce financial risk, and bring peace of mind to your property decisions.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card reveal">
+            <div class="process-step-num">01</div>
+            <h3 class="process-title">Requirement Intake</h3>
+            <p class="process-text">We discuss your location preferences, capital allocation, spatial needs, and long-term goals in depth.</p>
+          </div>
+
+          <div class="process-card reveal">
+            <div class="process-step-num">02</div>
+            <h3 class="process-title">Screening & Due Diligence</h3>
+            <p class="process-text">We filter shortlisted properties against title history, zoning, master plan accessibility, and fair pricing.</p>
+          </div>
+
+          <div class="process-card reveal">
+            <div class="process-step-num">03</div>
+            <h3 class="process-title">Accompanied Site Visits</h3>
+            <p class="process-text">We organize seamless site inspections with structural evaluation checklists and environmental analysis.</p>
+          </div>
+
+          <div class="process-card reveal">
+            <div class="process-step-num">04</div>
+            <h3 class="process-title">Closing & Handover Aid</h3>
+            <p class="process-text">We support paperwork preparation, registration formalities, and final handover checklists smoothly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Testimonials (Clearly Demo) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Client Feedback</span>
+          <h2 class="section-title">What Clients Say About Property Consultant</h2>
+          <p class="section-description">
+            Read illustrative testimonials demonstrating our transparent approach and dedicated client representation.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "The unbiased guidance we received while buying our 3 BHK apartment made all the difference. The team pointed out micro-location drawbacks we never would have noticed on our own."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AK</div>
+              <div class="author-info">
+                <h4>Anand K. (Demo Client)</h4>
+                <span>Homebuyer • Demo Location 01</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Finding a suitable commercial office lease for our 30-member firm felt overwhelming until we consulted Property Consultant. They negotiated flexible lock-in terms that protected us."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SM</div>
+              <div class="author-info">
+                <h4>Sunita M. (Demo Client)</h4>
+                <span>Corporate Tenant • Demo Location 04</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Selling my villa was handled with absolute professionalism. From setting a realistic market price to filtering genuine buyers, the consultation saved me countless unproductive weekends."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RV</div>
+              <div class="author-info">
+                <h4>Rajesh V. (Demo Client)</h4>
+                <span>Property Seller • Demo Location 02</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-disclaimer-box reveal" style="text-align: center;">
+          <strong>Demo Notice:</strong> All client names, quotes, and locations displayed above are fictional illustrative demo representations created for this website showcase.
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-bg-beige">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-description">
+            Common questions regarding property advisory services, consultation scope, and advisory fees.
+          </p>
+        </div>
+
+        <div class="accordion reveal">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>How does a Property Consultant differ from a traditional real estate broker?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                A traditional broker typically represents the seller or developer and focuses on pushing existing inventory to earn a transaction commission. An independent property consultant operates as an objective advisor representing your interests, conducting thorough due diligence, comparing all available market options, and assisting in pricing evaluation and negotiation.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Do you assist with both residential and commercial properties?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                Yes. Our advisory scope spans apartments, independent villas, residential land plots, commercial office floors, retail showrooms, and industrial warehousing across prime sectors.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Do you guarantee investment returns or property value appreciation?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                No. Real estate values and rental yields are subject to macroeconomic cycles, regulatory shifts, and local infrastructure developments. We provide structured evaluation models and risk assessments, but never promise or guarantee financial returns or capital appreciation.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>How can I schedule an initial consultation?</span>
+              <span class="accordion-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                You can easily book a session by clicking the "Book a Consultation" button on this website, calling our demo helpline at +91 90000 00000, or visiting our contact page to leave your preferred date and requirements.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule a Consultation CTA Banner -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="container">
+            <h2>Ready to Make an Informed Property Decision?</h2>
+            <p>
+              Connect with our property consultants today for objective advice, verified listings, and complete transaction guidance.
+            </p>
+            <div class="btn-group">
+              <button class="btn btn-primary" data-open-modal="consultation">Schedule Your Consultation</button>
+              <a href="contact.html" class="btn btn-outline-light">View Office Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Comprehensive Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="brand-logo">
+            <span class="brand-title">PROPERTY CONSULTANT</span>
+            <span class="brand-subtitle">Real Estate Advisory</span>
+          </a>
+          <p class="footer-desc">
+            An independent property consultancy providing transparent advisory, property selection, selling representation, and lease management for discerning clients.
+          </p>
+          <div style="margin-top: 1rem;">
+            <span class="badge badge-demo">Portfolio Demo Website</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Our Advisory</a></li>
+            <li><a href="services.html">Consultancy Services</a></li>
+            <li><a href="buy-property.html">Buy Property</a></li>
+            <li><a href="sell-property.html">Sell Property</a></li>
+            <li><a href="rent.html">Rent & Lease</a></li>
+            <li><a href="investment.html">Investment Advisory</a></li>
+            <li><a href="blog.html">Property Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Property Types</h4>
+          <ul class="footer-links">
+            <li><a href="buy-property.html">Apartments & Flats</a></li>
+            <li><a href="buy-property.html">Independent Villas</a></li>
+            <li><a href="buy-property.html">Residential Plots</a></li>
+            <li><a href="buy-property.html">Commercial Offices</a></li>
+            <li><a href="buy-property.html">Retail Showrooms</a></li>
+            <li><a href="rent.html">Warehouse & Logistics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Demo Contact</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Property Consultant Office, Demo City, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 90000 00000 (Demo Only)</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>demo@example.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 PROPERTY CONSULTANT. Demo portfolio showcase. Generic illustrative content.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Privacy Policy (Demo)</a>
+          <a href="contact.html">Terms of Service (Demo)</a>
+          <a href="contact.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Book A Consultation Modal Popup -->
+  <div id="consultationModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close-btn" data-close-modal aria-label="Close Modal">&times;</button>
+      <div class="modal-header">
+        <span class="badge badge-gold" style="margin-bottom: 0.5rem;">Advisory Session</span>
+        <h2 id="modalTitle" style="font-size: 1.6rem; margin-bottom: 0.25rem;">Book a Consultation</h2>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 0;">Connect with our real estate consultant to discuss your property requirements.</p>
+      </div>
+
+      <form data-validate id="modalConsultationForm">
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="modalFullName">Full Name <span class="required">*</span></label>
+            <input type="text" id="modalFullName" name="fullName" class="form-control" placeholder="Enter your name" required>
+            <span class="field-error-msg">Please enter your full name.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="modalPhone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="modalPhone" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+            <span class="field-error-msg">Please enter a valid phone number.</span>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="modalEmail">Email Address <span class="required">*</span></label>
+            <input type="email" id="modalEmail" name="email" class="form-control" placeholder="name@example.com" required>
+            <span class="field-error-msg">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="modalDate">Preferred Date <span class="required">*</span></label>
+            <input type="date" id="modalDate" name="preferredDate" class="form-control" required>
+            <span class="field-error-msg">Please select a preferred date.</span>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="modalService">Interested Service <span class="required">*</span></label>
+            <select id="modalService" name="service" class="form-control" required>
+              <option value="">Select Service</option>
+              <option value="buy">Property Buying Advisory</option>
+              <option value="sell">Property Selling Representation</option>
+              <option value="rent">Rental & Leasing Assistance</option>
+              <option value="investment">Investment Planning & Evaluation</option>
+              <option value="evaluation">Property Site Evaluation</option>
+            </select>
+            <span class="field-error-msg">Please choose a service.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="modalCategory">Property Category <span class="required">*</span></label>
+            <select id="modalCategory" name="category" class="form-control" required>
+              <option value="">Select Category</option>
+              <option value="residential">Residential (Apartment / Villa)</option>
+              <option value="commercial">Commercial (Office / Retail)</option>
+              <option value="plot">Plot / Land</option>
+              <option value="industrial">Industrial / Warehouse</option>
+            </select>
+            <span class="field-error-msg">Please select a property category.</span>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="modalMessage">Your Requirements & Questions</label>
+          <textarea id="modalMessage" name="message" class="form-control" rows="3" placeholder="Tell us about your budget, target location, or specific questions..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Confirm Consultation Request</button>
+
+        <p class="form-disclaimer">
+          * Frontend demonstration form only. No personal data is stored or transmitted.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
